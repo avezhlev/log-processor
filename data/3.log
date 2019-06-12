@@ -1,0 +1,698 @@
+2019-06-11 19:24:35.140  INFO 5108 --- [  restartedMain] c.t.f.FeedAggregatorApplication          : Starting FeedAggregatorApplication on rpc with PID 5108 (J:\projects\java\feed-aggregator\target\classes started by root in J:\projects\java\feed-aggregator)
+2019-06-11 19:24:35.143  INFO 5108 --- [  restartedMain] c.t.f.FeedAggregatorApplication          : No active profile set, falling back to default profiles: default
+2019-06-11 19:24:35.199  INFO 5108 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-06-11 19:24:35.199  INFO 5108 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-06-11 19:24:36.273  INFO 5108 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-11 19:24:36.396  INFO 5108 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 117ms. Found 1 repository interfaces.
+2019-06-11 19:24:36.716  INFO 5108 --- [  restartedMain] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2019-06-11 19:24:36.724  INFO 5108 --- [  restartedMain] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2019-06-11 19:24:36.826  INFO 5108 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$979bbd53] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-11 19:24:36.848  INFO 5108 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-11 19:24:36.871  INFO 5108 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$28d7882] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-11 19:24:37.309  INFO 5108 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-06-11 19:24:37.337  INFO 5108 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-11 19:24:37.337  INFO 5108 --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-06-11 19:24:37.448  INFO 5108 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-11 19:24:37.448  INFO 5108 --- [  restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2249 ms
+2019-06-11 19:24:37.600  INFO 5108 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-06-11 19:24:37.734  INFO 5108 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-06-11 19:24:37.847  INFO 5108 --- [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2019-06-11 19:24:37.848  INFO 5108 --- [  restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-06-11 19:24:37.967  INFO 5108 --- [  restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-06-11 19:24:38.083  INFO 5108 --- [  restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-06-11 19:24:38.622  INFO 5108 --- [  restartedMain] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@24e5f4b1'
+2019-06-11 19:24:38.625  INFO 5108 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-06-11 19:24:38.642  INFO 5108 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-06-11 19:24:38.808  INFO 5108 --- [  restartedMain] o.s.i.endpoint.EventDrivenConsumer       : Adding {bridge} as a subscriber to the 'org.springframework.integration.dsl.StandardIntegrationFlow#0.channel#1' channel
+2019-06-11 19:24:38.809  INFO 5108 --- [  restartedMain] o.s.integration.channel.DirectChannel    : Channel 'application.org.springframework.integration.dsl.StandardIntegrationFlow#0.channel#1' has 1 subscriber(s).
+2019-06-11 19:24:38.809  INFO 5108 --- [  restartedMain] o.s.i.endpoint.EventDrivenConsumer       : started org.springframework.integration.dsl.StandardIntegrationFlow#0.org.springframework.integration.config.ConsumerEndpointFactoryBean#0
+2019-06-11 19:24:38.819  INFO 5108 --- [  restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2019-06-11 19:24:38.822  INFO 5108 --- [  restartedMain] o.s.i.e.SourcePollingChannelAdapter      : started org.springframework.integration.dsl.StandardIntegrationFlow#0.org.springframework.integration.config.SourcePollingChannelAdapterFactoryBean#0
+2019-06-11 19:24:38.842  INFO 5108 --- [  restartedMain] o.s.i.endpoint.EventDrivenConsumer       : Adding {bridge} as a subscriber to the 'org.springframework.integration.dsl.StandardIntegrationFlow#1.channel#1' channel
+2019-06-11 19:24:38.842  INFO 5108 --- [  restartedMain] o.s.integration.channel.DirectChannel    : Channel 'application.org.springframework.integration.dsl.StandardIntegrationFlow#1.channel#1' has 1 subscriber(s).
+2019-06-11 19:24:38.842  INFO 5108 --- [  restartedMain] o.s.i.endpoint.EventDrivenConsumer       : started org.springframework.integration.dsl.StandardIntegrationFlow#1.org.springframework.integration.config.ConsumerEndpointFactoryBean#0
+2019-06-11 19:24:38.842  INFO 5108 --- [  restartedMain] o.s.i.e.SourcePollingChannelAdapter      : started org.springframework.integration.dsl.StandardIntegrationFlow#1.org.springframework.integration.config.SourcePollingChannelAdapterFactoryBean#0
+2019-06-11 19:24:39.426  INFO 5108 --- [  restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-11 19:24:39.467  WARN 5108 --- [  restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-06-11 19:24:39.620  INFO 5108 --- [  restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-06-11 19:24:39.787  INFO 5108 --- [  restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with key 'metadataStore' has been registered as an MBean but has no exposed attributes or operations
+2019-06-11 19:24:39.818  INFO 5108 --- [  restartedMain] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2019-06-11 19:24:39.819  INFO 5108 --- [  restartedMain] o.s.i.channel.PublishSubscribeChannel    : Channel 'application.errorChannel' has 1 subscriber(s).
+2019-06-11 19:24:39.819  INFO 5108 --- [  restartedMain] o.s.i.endpoint.EventDrivenConsumer       : started _org.springframework.integration.errorLogger
+2019-06-11 19:24:39.819  INFO 5108 --- [  restartedMain] o.s.i.endpoint.EventDrivenConsumer       : Adding {transformer} as a subscriber to the 'feedEntriesChannel' channel
+2019-06-11 19:24:39.819  INFO 5108 --- [  restartedMain] o.s.i.channel.PublishSubscribeChannel    : Channel 'application.feedEntriesChannel' has 1 subscriber(s).
+2019-06-11 19:24:39.819  INFO 5108 --- [  restartedMain] o.s.i.endpoint.EventDrivenConsumer       : started outputToDatabaseFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#0
+2019-06-11 19:24:39.819  INFO 5108 --- [  restartedMain] o.s.i.endpoint.EventDrivenConsumer       : Adding {jpa:outbound-gateway} as a subscriber to the 'outputToDatabaseFlow.channel#1' channel
+2019-06-11 19:24:39.819  INFO 5108 --- [  restartedMain] o.s.integration.channel.DirectChannel    : Channel 'application.outputToDatabaseFlow.channel#1' has 1 subscriber(s).
+2019-06-11 19:24:39.819  INFO 5108 --- [  restartedMain] o.s.i.endpoint.EventDrivenConsumer       : started outputToDatabaseFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#1
+2019-06-11 19:24:39.848  INFO 5108 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-06-11 19:24:39.851  INFO 5108 --- [  restartedMain] c.t.f.FeedAggregatorApplication          : Started FeedAggregatorApplication in 5.232 seconds (JVM running for 5.875)
+2019-06-11 19:24:40.230  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=More U.S. millennials subscribe to video games than traditional pay TV: survey, uri=https://www.reuters.com/article/us-usa-videogames-television/more-u-s-millennials-subscribe-to-video-games-than-traditional-pay-tv-survey-idUSKCN1TB2CB?feedType=RSS&feedName=technologyNews, publishedDate=Tue Jun 11 01:57:43 YEKT 2019)
+2019-06-11 19:24:40.268  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Uber's European rival Bolt enters London market, again, uri=https://www.reuters.com/article/us-bolt-london/ubers-european-rival-bolt-enters-london-market-again-idUSKCN1TC004?feedType=RSS&feedName=technologyNews, publishedDate=Tue Jun 11 05:02:59 YEKT 2019)
+2019-06-11 19:24:40.270  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Facebook to unveil new versions of Portal video chat devices this autumn, uri=https://www.reuters.com/article/us-facebook-portal-devices/facebook-to-unveil-new-versions-of-portal-video-chat-devices-this-autumn-idUSKCN1TC02H?feedType=RSS&feedName=technologyNews, publishedDate=Tue Jun 11 06:51:34 YEKT 2019)
+2019-06-11 19:24:40.271  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Citi launches co-branded credit cards with SE Asia's Grab in push for more customers, uri=https://www.reuters.com/article/us-citigroup-asia-grab/citi-launches-co-branded-credit-cards-with-se-asias-grab-in-push-for-more-customers-idUSKCN1TC083?feedType=RSS&feedName=technologyNews, publishedDate=Tue Jun 11 08:02:34 YEKT 2019)
+2019-06-11 19:24:40.273  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Huawei executive says goal to be world's top phone maker some time off, uri=https://www.reuters.com/article/us-huawei-tech-usa/huawei-executive-says-goal-to-be-worlds-top-phone-maker-some-time-off-idUSKCN1TC06L?feedType=RSS&feedName=technologyNews, publishedDate=Tue Jun 11 08:12:56 YEKT 2019)
+2019-06-11 19:24:40.274  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Amazon embraces U.S. government business, despite occasional controversy, uri=https://www.reuters.com/article/us-amazon-com-facial-recognition/amazon-embraces-u-s-government-business-despite-occasional-controversy-idUSKCN1TC09D?feedType=RSS&feedName=technologyNews, publishedDate=Tue Jun 11 10:10:06 YEKT 2019)
+2019-06-11 19:24:40.276  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Alibaba's smart speaker to feature in Audi, Renault, Honda cars, uri=https://www.reuters.com/article/us-alibaba-autos/alibabas-smart-speaker-to-feature-in-audi-renault-honda-cars-idUSKCN1TC0IC?feedType=RSS&feedName=technologyNews, publishedDate=Tue Jun 11 11:29:12 YEKT 2019)
+2019-06-11 19:24:40.277  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Swedish gearmaker Ericsson increases 5G forecasts, uri=https://www.reuters.com/article/us-ericsson-mobility-report/swedish-gearmaker-ericsson-increases-5g-forecasts-idUSKCN1TC0R8?feedType=RSS&feedName=technologyNews, publishedDate=Tue Jun 11 13:09:32 YEKT 2019)
+2019-06-11 19:24:40.279  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Explainer: 'Privacy coin' Monero offers near total anonymity, uri=https://www.reuters.com/article/us-crypto-currencies-altcoins-explainer/explainer-privacy-coin-monero-offers-near-total-anonymity-idUSKCN1SL0F0?feedType=RSS&feedName=technologyNews, publishedDate=Tue Jun 11 14:33:05 YEKT 2019)
+2019-06-11 19:24:40.280  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Rise of smaller rivals throws up fresh challenge to bitcoin, uri=https://www.reuters.com/article/us-crypto-currencies-altcoins/rise-of-smaller-rivals-throws-up-fresh-challenge-to-bitcoin-idUSKCN1SL0FC?feedType=RSS&feedName=technologyNews, publishedDate=Tue Jun 11 14:33:05 YEKT 2019)
+2019-06-11 19:24:40.282 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: xdehluodyynypfnzqvlc
+2019-06-11 19:24:40.282 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: clcpxlifhyyegpfloehy
+2019-06-11 19:24:40.282 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: daxascrpsbnuarwwooog
+2019-06-11 19:24:40.282 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: pnuekuyagevvhzluajfc
+2019-06-11 19:24:40.282 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: hewmawobfjiukbzvpykj
+2019-06-11 19:24:40.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: mosbxdjxgstylfjpnuvo
+2019-06-11 19:24:40.426 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: uengnwcrpottdpzhsdty
+2019-06-11 19:24:40.527 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: uvbjczoppemhtscjarbt
+2019-06-11 19:24:40.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: darktvfqmviehvhlzhfr
+2019-06-11 19:24:40.726 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: thqxjnomfhqpdsmbtqra
+2019-06-11 19:24:40.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: unifiknalpjsoamjhmrf
+2019-06-11 19:24:40.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: ebwqxkydkncixjammehh
+2019-06-11 19:24:41.026 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: zvxyeejdmhyqhbvyrhkk
+2019-06-11 19:24:41.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: hyzqbzibjxryyiggytzk
+2019-06-11 19:24:41.227 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: eatbwnmpkzyrqdwcfyef
+2019-06-11 19:24:41.327 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: fdyqchwjpqtadsobpjzp
+2019-06-11 19:24:41.426 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: tpaeevggfqvafeosguka
+2019-06-11 19:24:41.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: ienixplciezhhlsuuktj
+2019-06-11 19:24:41.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: tzfgdeeifxbgxuilpfnd
+2019-06-11 19:24:41.726 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: mwnujqxibmbfgekwkmey
+2019-06-11 19:24:41.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: ravbueypjnrcdeershyf
+2019-06-11 19:24:41.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: sffozfcctpuwzdeevbnk
+2019-06-11 19:24:42.026 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: pameiiakgktxwkmhhhlx
+2019-06-11 19:24:42.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: vovahbxliabdxamlxgeu
+2019-06-11 19:24:42.225 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: ykssxuhqrcczloimwhdz
+2019-06-11 19:24:42.327 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: fieiesczgcdsggdiqvmm
+2019-06-11 19:24:42.426 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: whuraezaopuorgwaouej
+2019-06-11 19:24:42.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: zmjtakifiwmviggcpmxv
+2019-06-11 19:24:42.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: fpdiwfjlefkzfvcfqsqj
+2019-06-11 19:24:42.726 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: hjvwsarghkdwiuqgroyd
+2019-06-11 19:24:42.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: okbbhbcpmcmpghffxnpv
+2019-06-11 19:24:42.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: gnhrucgneakgrpllplmh
+2019-06-11 19:24:43.026 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: vrsyghwgvczpdcdqdryi
+2019-06-11 19:24:43.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: aozdxsmrewqqybgoyrmq
+2019-06-11 19:24:43.226 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: vexsnifyjqrsahrsptjp
+2019-06-11 19:24:43.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: ulvuztrxzqfqyveyjhiu
+2019-06-11 19:24:43.426 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: cdeidbmrvrpvnfjbrndv
+2019-06-11 19:24:43.527 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: jsynejuegihsehwgwywm
+2019-06-11 19:24:43.627 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: vhkmiwssvesnazkhfsir
+2019-06-11 19:24:43.726 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: xaykxagkgkqmqqyvxpnx
+2019-06-11 19:24:43.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: ldxlhjndzofhldjyskip
+2019-06-11 19:24:43.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: sncccilyyzbkgynnmfvg
+2019-06-11 19:24:44.027 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: yukeqtvvydufrfuxyvwd
+2019-06-11 19:24:44.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: gblcpvlkhigwaqhdmcph
+2019-06-11 19:24:44.226 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: shilrfarfbucoihffsmu
+2019-06-11 19:24:44.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: dioqobixzprsdnijpsfe
+2019-06-11 19:24:44.426 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: ztjmdkvymjmuwhwnoilt
+2019-06-11 19:24:44.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: wpoddmretklvpifrftqv
+2019-06-11 19:24:44.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: vdfdduuiakmzrykeegvf
+2019-06-11 19:24:44.726 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: tefjdnqmsjfzngvnscha
+2019-06-11 19:24:44.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: jnaldfzwdmbwrbwjdrma
+2019-06-11 19:24:44.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: mbopybvprhwagtpauhui
+2019-06-11 19:24:45.026 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: pfycweezvkwzmurdcdrh
+2019-06-11 19:24:45.127 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: qssbatphweklpfeiyltr
+2019-06-11 19:24:45.226 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: bkhgruejoigipsoryezg
+2019-06-11 19:24:45.325 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: zgvhubgnboqklgebgzsv
+2019-06-11 19:24:45.427 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: xztfhhepiviydfiyncyu
+2019-06-11 19:24:45.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: eyhmbnrrurhqfiogykpi
+2019-06-11 19:24:45.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: gribjwqekdvxqbypemed
+2019-06-11 19:24:45.727 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: bjnbtsixzyipwoqjxqfd
+2019-06-11 19:24:45.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: ptgmeiwiiiruzsrjgevl
+2019-06-11 19:24:45.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: wrnveswplhxekwganscs
+2019-06-11 19:24:46.026 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: rninriecyvmcvybmwwmf
+2019-06-11 19:24:46.127 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: gdmxztwfodzldirvtylx
+2019-06-11 19:24:46.226 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: ztupbfnlutieelybmpco
+2019-06-11 19:24:46.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: ziqgsitlfilyqzwxdcmo
+2019-06-11 19:24:46.427 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: agkerosdawlzsnzsjhsn
+2019-06-11 19:24:46.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: bsywacpscfvoerksbwpj
+2019-06-11 19:24:46.627 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: nkjzoepoakagxemfcjpe
+2019-06-11 19:24:46.726 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: hgrecphjhnfkxwmmbrqh
+2019-06-11 19:24:46.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: gqkbczmdysrapxzitigy
+2019-06-11 19:24:46.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: oqvlioekrwmckpcxhoet
+2019-06-11 19:24:47.026 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: ktatocsluafhvyzwkaiy
+2019-06-11 19:24:47.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: rbzzffnhtwcpovppzibn
+2019-06-11 19:24:47.226 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: qxgoariobozzzyftelkl
+2019-06-11 19:24:47.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: kajoeqmqtvrmcgyfxnca
+2019-06-11 19:24:47.426 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: iocmufvujafpmiqwyfjw
+2019-06-11 19:24:47.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: jdpwcfucdzxepimubrop
+2019-06-11 19:24:47.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: rxupaavwsucgtyfgyhtm
+2019-06-11 19:24:47.727 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: vrkztkcgjiuurhpbtsfo
+2019-06-11 19:24:47.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: sworexafnkyjqfskyejd
+2019-06-11 19:24:47.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: adngxnafvzkgtqcgnwoi
+2019-06-11 19:24:48.027 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: wqviprspwgrivbzbxqoi
+2019-06-11 19:24:48.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: ozxvyroqaphvgfgsegth
+2019-06-11 19:24:48.227 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: atdaxifcxjtxrrlzanem
+2019-06-11 19:24:48.325 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: iklfgobojgxtnrutnkqs
+2019-06-11 19:24:48.427 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: xvfsnryfiduggemvhnsc
+2019-06-11 19:24:48.527 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: vpxagqwkvbgorqppfvdy
+2019-06-11 19:24:48.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: oopxvoveccxnvukapdmg
+2019-06-11 19:24:48.727 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: xqetzbtzubnhggzjqisu
+2019-06-11 19:24:48.823  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Early humans used northern migration routes to reach eastern Asia, uri=https://www.sciencedaily.com/releases/2019/05/190529145054.htm, publishedDate=Wed May 29 23:50:54 YEKT 2019)
+2019-06-11 19:24:48.825  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Declining fertility rates may explain Neanderthal extinction, uri=https://www.sciencedaily.com/releases/2019/05/190529145057.htm, publishedDate=Wed May 29 23:50:57 YEKT 2019)
+2019-06-11 19:24:48.826  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Earth recycles ocean floor into diamonds, uri=https://www.sciencedaily.com/releases/2019/05/190529145104.htm, publishedDate=Wed May 29 23:51:04 YEKT 2019)
+2019-06-11 19:24:48.827  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Birds perceive 'warm' colors differently from 'cool' ones, uri=https://www.sciencedaily.com/releases/2019/05/190529145109.htm, publishedDate=Wed May 29 23:51:09 YEKT 2019)
+2019-06-11 19:24:48.829  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=A rose inspires smart way to collect and purify water, uri=https://www.sciencedaily.com/releases/2019/05/190529145144.htm, publishedDate=Wed May 29 23:51:44 YEKT 2019)
+2019-06-11 19:24:48.830  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Beyond 1 and 0: Engineers boost potential for creating successor to shrinking transistors, uri=https://www.sciencedaily.com/releases/2019/05/190529180242.htm, publishedDate=Thu May 30 03:02:42 YEKT 2019)
+2019-06-11 19:24:48.832  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=New evidence links ultra-processed foods with a range of health risks, uri=https://www.sciencedaily.com/releases/2019/05/190529221040.htm, publishedDate=Thu May 30 07:10:40 YEKT 2019)
+2019-06-11 19:24:48.833  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Edible insects? Lab-grown meat? The real future food is lab-grown insect meat, uri=https://www.sciencedaily.com/releases/2019/05/190530101136.htm, publishedDate=Thu May 30 19:11:36 YEKT 2019)
+2019-06-11 19:24:48.834  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Research confirms gut-brain connection in autism, uri=https://www.sciencedaily.com/releases/2019/05/190530101143.htm, publishedDate=Thu May 30 19:11:43 YEKT 2019)
+2019-06-11 19:24:48.835  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Circadian clocks: Body parts respond to day and night independently from brain, studies show, uri=https://www.sciencedaily.com/releases/2019/05/190530141443.htm, publishedDate=Thu May 30 23:14:43 YEKT 2019)
+2019-06-11 19:24:48.837 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: qnqnojodwwegkghwwazu
+2019-06-11 19:24:48.843  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Fear and fervor propel Shanghai's tech board amid trade, Huawei tensions, uri=https://www.reuters.com/article/us-china-markets-techboard/fear-and-fervor-propel-shanghais-tech-board-amid-trade-huawei-tensions-idUSKCN1TC0B3?feedType=RSS&feedName=technologyNews, publishedDate=Tue Jun 11 15:00:18 YEKT 2019)
+2019-06-11 19:24:48.845  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Factbox: Some of the biggest candidates for Shanghai's new tech board, uri=https://www.reuters.com/article/us-china-markets-techboard-candidates-fa/factbox-some-of-the-biggest-candidates-for-shanghais-new-tech-board-idUSKCN1TC0BS?feedType=RSS&feedName=technologyNews, publishedDate=Tue Jun 11 15:00:18 YEKT 2019)
+2019-06-11 19:24:48.846  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Ford denies it is in the self-driving slow lane, uri=https://www.reuters.com/article/us-ford-motor-autonomous/ford-denies-it-is-in-the-self-driving-slow-lane-idUSKCN1TC0ZY?feedType=RSS&feedName=technologyNews, publishedDate=Tue Jun 11 15:39:57 YEKT 2019)
+2019-06-11 19:24:48.847  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Exclusive: Top Japanese chip gear firm to honor U.S. blacklist of Chinese firms - executive, uri=https://www.reuters.com/article/us-usa-trade-china-semiconductors-exclus/exclusive-top-japanese-chip-gear-firm-to-honor-u-s-blacklist-of-chinese-firms-executive-idUSKCN1TC0H6?feedType=RSS&feedName=technologyNews, publishedDate=Tue Jun 11 15:44:45 YEKT 2019)
+2019-06-11 19:24:48.849  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=First stop Southeast Asia: SoftBank, Toyota's autonomous car venture heads overseas, uri=https://www.reuters.com/article/us-softbank-toyota-monet-autonomous/first-stop-southeast-asia-softbank-toyotas-autonomous-car-venture-heads-overseas-idUSKCN1TC0ZK?feedType=RSS&feedName=technologyNews, publishedDate=Tue Jun 11 16:33:01 YEKT 2019)
+2019-06-11 19:24:48.850  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Foxconn has enough capacity outside China to meet Apple's U.S. demand, uri=https://www.reuters.com/article/us-foxconn-chairman/foxconn-has-enough-capacity-outside-china-to-meet-apples-u-s-demand-idUSKCN1TC0I0?feedType=RSS&feedName=technologyNews, publishedDate=Tue Jun 11 16:37:18 YEKT 2019)
+2019-06-11 19:24:48.852  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Senator Warren urges antitrust chief to recuse himself from Google, Apple probes, uri=https://www.reuters.com/article/us-tech-antitrust-warren/senator-warren-urges-antitrust-chief-to-recuse-himself-from-google-apple-probes-idUSKCN1TC1H9?feedType=RSS&feedName=technologyNews, publishedDate=Tue Jun 11 17:49:59 YEKT 2019)
+2019-06-11 19:24:48.853  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=New chip to let headphones respond to Amazon's Alexa by name, uri=https://www.reuters.com/article/us-knowles-tech-amazon-com/new-chip-to-let-headphones-respond-to-amazons-alexa-by-name-idUSKCN1TC1J9?feedType=RSS&feedName=technologyNews, publishedDate=Tue Jun 11 18:15:17 YEKT 2019)
+2019-06-11 19:24:48.854  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Factbox: Global tech companies shun Huawei after U.S. ban, uri=https://www.reuters.com/article/us-huawei-suppliers-factbox/factbox-global-tech-companies-shun-huawei-after-u-s-ban-idUSKCN1TC1KW?feedType=RSS&feedName=technologyNews, publishedDate=Tue Jun 11 18:45:56 YEKT 2019)
+2019-06-11 19:24:48.856  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Apple cancels plans for second data center in Denmark, uri=https://www.reuters.com/article/us-apple-denmark/apple-cancels-plans-for-second-data-center-in-denmark-idUSKCN1TC1PW?feedType=RSS&feedName=technologyNews, publishedDate=Tue Jun 11 19:11:10 YEKT 2019)
+2019-06-11 19:24:48.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: mqdmfhcfdcsyaegeydrc
+2019-06-11 19:24:49.026 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: ogijsqilltakceoftpgy
+2019-06-11 19:24:49.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: dgvjlsgqgjkuutzosjlj
+2019-06-11 19:24:49.226 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: wgywlnggglugmvuqifxi
+2019-06-11 19:24:49.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: zngcegsiswhdylawtrgm
+2019-06-11 19:24:49.426 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: ymknijxyyrdvrhkqpwyt
+2019-06-11 19:24:49.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: jallllvnrzthzwtedflc
+2019-06-11 19:24:49.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: aeicucuakglbzddfwwic
+2019-06-11 19:24:49.725 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: tjhvhswakgqxponpazpr
+2019-06-11 19:24:49.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: epxsjxjcrekcxwgcehpd
+2019-06-11 19:24:49.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: dinnvoxemilcphbgyead
+2019-06-11 19:24:50.027 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: zrkhuywagcngojlrspfq
+2019-06-11 19:24:50.127 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: afyqkahjslifnxnjebqu
+2019-06-11 19:24:50.227 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: lbiiamspksftvwcaxyje
+2019-06-11 19:24:50.327 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: uavejluiuvhjqupltciu
+2019-06-11 19:24:50.426 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: fnvdhmiabmjddnahizvo
+2019-06-11 19:24:50.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: qkagooniyiafhbhxbvhs
+2019-06-11 19:24:50.625 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: onlursoxujroscipwuhj
+2019-06-11 19:24:50.727 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: hpdzzpictymhamavsrpi
+2019-06-11 19:24:50.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: zujukrymvopaihcaskqc
+2019-06-11 19:24:50.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: dtkxvylczhdpdxftzydt
+2019-06-11 19:24:51.027 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: ygxpsjfyiokvkelthrwz
+2019-06-11 19:24:51.127 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: tbfsfnhdgtpocjlqmkyf
+2019-06-11 19:24:51.226 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: crekvfcnykajrqogbava
+2019-06-11 19:24:51.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: pvczthmqdrrxkmdalhfr
+2019-06-11 19:24:51.427 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: dglvoeyemuflqldxihrj
+2019-06-11 19:24:51.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: sbxifqdwigtbrxlurnav
+2019-06-11 19:24:51.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: ljvxgkgmgkgpfafdkqmu
+2019-06-11 19:24:51.727 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: xeuusyksreattfkprxbk
+2019-06-11 19:24:51.825 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: arklnbebdhrspddzqmau
+2019-06-11 19:24:51.927 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: bcvixodaegdvsokuoorr
+2019-06-11 19:24:52.026 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: wojmxhoxspqbmeybjltl
+2019-06-11 19:24:52.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: razzsydsldfxyeviwxcj
+2019-06-11 19:24:52.226 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: itzffhpsoxsxpacdzyjt
+2019-06-11 19:24:52.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: jvegyjrrfshqzxllhuct
+2019-06-11 19:24:52.426 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: dwirqbeiddbdtdowswud
+2019-06-11 19:24:52.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: lddvhmjxyuyhouachnif
+2019-06-11 19:24:52.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: whgvhxvtdmdmymwdijzi
+2019-06-11 19:24:52.727 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: rxdbwvbruoybgtuloxlw
+2019-06-11 19:24:52.827 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: yfummbejbzwuncxggxaj
+2019-06-11 19:24:52.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: mfqzirtvctlyieuvrrav
+2019-06-11 19:24:53.027 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: dknxfogwibreyjsiffvu
+2019-06-11 19:24:53.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: xiboomolfuofjxwezsvz
+2019-06-11 19:24:53.226 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: rcmtkcxvvxbrknxbieeq
+2019-06-11 19:24:53.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: ovbjnqytysoisfupfwbh
+2019-06-11 19:24:53.427 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: izoyordiugoxgwrrpjzr
+2019-06-11 19:24:53.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: jrxbqjcbmoyehitdfmzo
+2019-06-11 19:24:53.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: gddnsjddauevwycdtkya
+2019-06-11 19:24:53.727 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: oiisvubwrjukhvognuel
+2019-06-11 19:24:53.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: pftmcmopirniydrmsokc
+2019-06-11 19:24:53.927 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: rftgbvadhioqrroqyrcy
+2019-06-11 19:24:54.026 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: jbaqovzuglqqfatdikqo
+2019-06-11 19:24:54.127 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: sxlsjwdkmjzzsscwykzl
+2019-06-11 19:24:54.227 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: mmauxlydlnjdlkdribad
+2019-06-11 19:24:54.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: ckgucsdvsbabcnwycmqi
+2019-06-11 19:24:54.427 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: oobbhlpcfcjwrrzyhaay
+2019-06-11 19:24:54.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: jrlsvsthndmwhapxjbkb
+2019-06-11 19:24:54.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: mybviwvddxukjrygcbvu
+2019-06-11 19:24:54.726 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: emsspjwiwjdumgyncbhp
+2019-06-11 19:24:54.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: sqkvxcobedrsobxxqdhz
+2019-06-11 19:24:54.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: ouwhnabnsxxxbudwsprt
+2019-06-11 19:24:55.027 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: ecubtepkdtrcmsapcqhf
+2019-06-11 19:24:55.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: prsiboiikzglfjhvftbi
+2019-06-11 19:24:55.226 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: ckpfulmpazykjghifgqq
+2019-06-11 19:24:55.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: zsfybgnxzkvqairclcfy
+2019-06-11 19:24:55.425 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: qzttujzhlkvcqspmagrk
+2019-06-11 19:24:55.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: qgmwkvgotqixbcjlfvkj
+2019-06-11 19:24:55.627 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: nnzukhgvnackthdzamoq
+2019-06-11 19:24:55.727 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: clfryerbzdxxbghpdbsf
+2019-06-11 19:24:55.827 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: qpdvlswdxzgyqewwyddg
+2019-06-11 19:24:55.927 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: xhtiobdkaadzxwdayakv
+2019-06-11 19:24:56.027 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: vtycexlqgtwtnzgroxoh
+2019-06-11 19:24:56.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: hshwwbldjtetmiyjxjfv
+2019-06-11 19:24:56.226 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: zgeeeeupnlsleuthxyru
+2019-06-11 19:24:56.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: fncjawdyqlsoxtucbbax
+2019-06-11 19:24:56.426 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: hgjcwmgjoyuiwobqknmd
+2019-06-11 19:24:56.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: rzaqtrtbttjmqhghrvgy
+2019-06-11 19:24:56.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: plzzhnxrhbstzzyjhznx
+2019-06-11 19:24:56.726 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: biwywcvougfgdsalijvl
+2019-06-11 19:24:56.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: lllehcbjiwxsaaqmykxq
+2019-06-11 19:24:56.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: hmwwnnbepxzrerwbpywp
+2019-06-11 19:24:57.026 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: lwuxhavxekstjnzvkelr
+2019-06-11 19:24:57.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: bnxgkhmshgynaeessalj
+2019-06-11 19:24:57.226 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: avrqcghbandhnliopgxi
+2019-06-11 19:24:57.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: rkgpnnzjfkhwvqzgywbe
+2019-06-11 19:24:57.426 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: vohpubijpnyvlwdwfdoi
+2019-06-11 19:24:57.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: qpqrqoumguwmpmuskrcp
+2019-06-11 19:24:57.627 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: fquqrzivrjvwnpsoaeyn
+2019-06-11 19:24:57.726 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: nxoqoosckqolsfepzllq
+2019-06-11 19:24:57.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: ebuletaxomhatfdiuhvu
+2019-06-11 19:24:57.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: diyvicsulfjqzhaoginz
+2019-06-11 19:24:58.026 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: kruhvtfvffxujorbwdqv
+2019-06-11 19:24:58.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: qeprcjxbcfgmuyvodsyo
+2019-06-11 19:24:58.226 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: oiydrzfiuayujmazufiq
+2019-06-11 19:24:58.325 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: npasclvsobmqjhhlvdxy
+2019-06-11 19:24:58.426 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: srhrbkuoodokbuewtqmr
+2019-06-11 19:24:58.527 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: ykvnqaiyntewctsacpek
+2019-06-11 19:24:58.625 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: qvkanxjdhogbtyfzruyn
+2019-06-11 19:24:58.726 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: mzwkainhthzprdlpxfuo
+2019-06-11 19:24:58.822  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Ancient DNA tells the story of the first herders and farmers in east Africa, uri=https://www.sciencedaily.com/releases/2019/05/190530141445.htm, publishedDate=Thu May 30 23:14:45 YEKT 2019)
+2019-06-11 19:24:58.823  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Transgenic fungus rapidly killed malaria mosquitoes in West African study, uri=https://www.sciencedaily.com/releases/2019/05/190530141501.htm, publishedDate=Thu May 30 23:15:01 YEKT 2019)
+2019-06-11 19:24:58.825  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=New way to protect against high-dose radiation damage discovered, uri=https://www.sciencedaily.com/releases/2019/05/190530141522.htm, publishedDate=Thu May 30 23:15:22 YEKT 2019)
+2019-06-11 19:24:58.826  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Combination of three gene mutations results in deadly human heart disease, uri=https://www.sciencedaily.com/releases/2019/05/190530141525.htm, publishedDate=Thu May 30 23:15:25 YEKT 2019)
+2019-06-11 19:24:58.827  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Pain free, thanks to evolution, uri=https://www.sciencedaily.com/releases/2019/05/190530141533.htm, publishedDate=Thu May 30 23:15:33 YEKT 2019)
+2019-06-11 19:24:58.828  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Physicists 'teleport' logic operation between separated ions, uri=https://www.sciencedaily.com/releases/2019/05/190530141539.htm, publishedDate=Thu May 30 23:15:39 YEKT 2019)
+2019-06-11 19:24:58.829  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Subaru Telescope captures 1800 exploding stars, uri=https://www.sciencedaily.com/releases/2019/05/190531085408.htm, publishedDate=Fri May 31 17:54:08 YEKT 2019)
+2019-06-11 19:24:58.830  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=A treasure map to understanding the epigenetic causes of disease, uri=https://www.sciencedaily.com/releases/2019/06/190603084134.htm, publishedDate=Mon Jun 03 17:41:34 YEKT 2019)
+2019-06-11 19:24:58.831  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Feathers came first, then birds, uri=https://www.sciencedaily.com/releases/2019/06/190603124542.htm, publishedDate=Mon Jun 03 21:45:42 YEKT 2019)
+2019-06-11 19:24:58.832  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Physicists can predict the jumps of Schrödinger's cat (and finally save it), uri=https://www.sciencedaily.com/releases/2019/06/190603124621.htm, publishedDate=Mon Jun 03 21:46:21 YEKT 2019)
+2019-06-11 19:24:58.833 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: rxgstwmgtmcfimqkomfy
+2019-06-11 19:24:59.083 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: xcqdjstnawtxalrhpruq
+2019-06-11 19:24:59.084 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: umdvjxixluysasyqydqa
+2019-06-11 19:24:59.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: eycztxjuiktxpnvsmyjs
+2019-06-11 19:24:59.226 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: omzywsxpfqjgprmgqger
+2019-06-11 19:24:59.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: eaaxnhdwsrcsztqyziub
+2019-06-11 19:24:59.426 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: oacuzbtflvsgughggcgw
+2019-06-11 19:24:59.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: nyyenurecrglpnqzxxej
+2019-06-11 19:24:59.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: mbdxyqavknqonwrcvajb
+2019-06-11 19:24:59.726 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: hmcgwuxjlvrgigwtgtxd
+2019-06-11 19:24:59.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: creakuughvmnenzcifvb
+2019-06-11 19:24:59.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: ewzytudmfpdhwgsvbkao
+2019-06-11 19:25:00.026 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: yzzzaebpecxoqorqbcfs
+2019-06-11 19:25:00.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: ieadkahztmhleygftruw
+2019-06-11 19:25:00.226 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: qunawbgtnwsckyjyfpov
+2019-06-11 19:25:00.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: gaqzjqvlhktlpssnxjxm
+2019-06-11 19:25:00.426 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: smqgioimgapmovbrbcaw
+2019-06-11 19:25:00.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: yqsnzwvptygdtxuewpza
+2019-06-11 19:25:00.625 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: uffxkrvlhcrekevegwyi
+2019-06-11 19:25:00.727 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: xcvhsvuprwdympjpgfeo
+2019-06-11 19:25:00.827 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: hrwytpkdhbvtduszhwoy
+2019-06-11 19:25:00.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: pdvrtecwfqneggtwfkjk
+2019-06-11 19:25:01.026 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: bsqsltchmwfhojaxhysb
+2019-06-11 19:25:01.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: jmrvtotbkmyumgurtzmb
+2019-06-11 19:25:01.227 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: czryhevvuuzsofnxhurq
+2019-06-11 19:25:01.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: hbrgjzbdzfpjggaoidhg
+2019-06-11 19:25:01.426 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: iakcmaccxblwlklclaub
+2019-06-11 19:25:01.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: hblpmaybbgbrbpwnlnvv
+2019-06-11 19:25:01.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: etxvbctdtwpamvftncyi
+2019-06-11 19:25:01.726 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: bidmhibpbvsyozautmfb
+2019-06-11 19:25:01.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: ymnmocqpsyggoyawadwa
+2019-06-11 19:25:01.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: hovukvfqxdovnfodjigc
+2019-06-11 19:25:02.026 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: xzcbvqvwkhhjqosfiifh
+2019-06-11 19:25:02.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: hlregqorfahfkapuzxps
+2019-06-11 19:25:02.227 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: yyzuhfxhshyrnpycfvbk
+2019-06-11 19:25:02.327 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: lxzpgdlfvndslwcmckbp
+2019-06-11 19:25:02.426 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: wdqssibesfydwetbrzwd
+2019-06-11 19:25:02.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: szixdtowbsmbodstxvph
+2019-06-11 19:25:02.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: pdffkvyifujmonsuamfw
+2019-06-11 19:25:02.726 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: hrdquurkjygoqzaxokbp
+2019-06-11 19:25:02.827 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: dsgwkgczqojucjlutljp
+2019-06-11 19:25:02.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: poaqvijfshjfxpqhlfso
+2019-06-11 19:25:03.026 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: zxqrmrdcyfgyararoauy
+2019-06-11 19:25:03.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: elqzmspxvcehymhnsmle
+2019-06-11 19:25:03.226 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: yaoyruwsggwgodirmvnh
+2019-06-11 19:25:03.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: hbiobplkgaicolwqpeaa
+2019-06-11 19:25:03.426 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: hhijhtdbgvdrxynuhbse
+2019-06-11 19:25:03.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: vywlpknjedhtsinerjxw
+2019-06-11 19:25:03.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: ayewdqzwcptuqvkagnxd
+2019-06-11 19:25:03.726 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: zwulrqvcbevdyxbekicr
+2019-06-11 19:25:03.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: gmcwwfxxzfbmljoghokw
+2019-06-11 19:25:03.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: ocwmwylrvulxvpgnlpst
+2019-06-11 19:25:04.026 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: ggpxgzlgajndvxxqzsto
+2019-06-11 19:25:04.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: njukyesqoaccwlbptazk
+2019-06-11 19:25:04.226 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: pxkbrsvjgjzheahzidac
+2019-06-11 19:25:04.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: bjervisuaxolnhlxiovi
+2019-06-11 19:25:04.426 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: olrheradcgtirzcpuqyl
+2019-06-11 19:25:04.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: rlhbcvexwohsfcwwfgti
+2019-06-11 19:25:04.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: bwonkynbwzflzmqlpsyv
+2019-06-11 19:25:04.726 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: ftcxxxwgxshcaadhogew
+2019-06-11 19:25:04.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: srvgobrmonrfuesiqvbt
+2019-06-11 19:25:04.927 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: giyrippcvkfoyaelntec
+2019-06-11 19:25:05.027 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: yvfiwoqrlgbhggnztbvm
+2019-06-11 19:25:05.127 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: mzxjaecspgyqqwnwtrmh
+2019-06-11 19:25:05.226 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: xjznhlxyvzthjngslcme
+2019-06-11 19:25:05.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: pjlbzintxnlemztyvqbf
+2019-06-11 19:25:05.426 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: jplfxeaofzfbojnqbhlb
+2019-06-11 19:25:05.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: ahthonjhfmespnodwwyc
+2019-06-11 19:25:05.627 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: cmdyvrowfhyhbqmqavux
+2019-06-11 19:25:05.727 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: rpwhpvqlotfprwdjipbw
+2019-06-11 19:25:05.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: cthrltsswyvsbryigldp
+2019-06-11 19:25:05.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: rughydupqqvwqglaxyfg
+2019-06-11 19:25:06.026 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: qfskkdvwnfjcogrngutv
+2019-06-11 19:25:06.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: zghsghqpnhxjjgsdxkxn
+2019-06-11 19:25:06.226 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: ovbneqvptsjbbrkespll
+2019-06-11 19:25:06.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: ryloztthrjiyidvdoeqx
+2019-06-11 19:25:06.425 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: snjzadvoxhfsbjocttdf
+2019-06-11 19:25:06.527 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: osvepzfzokoyujeubdpr
+2019-06-11 19:25:06.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: ndeihwinxhqbsnqabzsk
+2019-06-11 19:25:06.725 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: cxmkubpcfpevkmljoaig
+2019-06-11 19:25:06.825 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: egbzwtykojdvtloyxkng
+2019-06-11 19:25:06.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: negmnktvgvsscxkydbsx
+2019-06-11 19:25:07.027 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: uenimoltwgbdlrfkcler
+2019-06-11 19:25:07.127 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: zmuojwueaabfkvqbhpue
+2019-06-11 19:25:07.226 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: opikrddhepjvrzzurgit
+2019-06-11 19:25:07.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: arvzphswwcrxcfamulij
+2019-06-11 19:25:07.426 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: sggneidnjmlpqofcwpzj
+2019-06-11 19:25:07.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: zsswrjnkvvepliipscqn
+2019-06-11 19:25:07.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: yqyuanotnsqbfulezsws
+2019-06-11 19:25:07.727 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: cqugrrilkkxnypgwtrnj
+2019-06-11 19:25:07.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: kfglzhnljbxzjpvwnjkc
+2019-06-11 19:25:07.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: ffddovtdwccqyffkgvbz
+2019-06-11 19:25:08.027 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: vyfzqoptlslpyfidqpki
+2019-06-11 19:25:08.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: hqzqmfqlsuqfmhojiked
+2019-06-11 19:25:08.226 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: vzozexjpwgmagoymazmq
+2019-06-11 19:25:08.327 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: yjrelxjkgribnhajjkyj
+2019-06-11 19:25:08.426 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: uhmseapuvmvqpychiiwa
+2019-06-11 19:25:08.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: pyvejlewdqyjwqcxhzdl
+2019-06-11 19:25:08.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: sykvgjmyksozkboufnxo
+2019-06-11 19:25:08.726 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: inwehubxxiebfpdknaxk
+2019-06-11 19:25:08.824  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=CRISPR baby mutation significantly increases mortality, uri=https://www.sciencedaily.com/releases/2019/06/190603124709.htm, publishedDate=Mon Jun 03 21:47:09 YEKT 2019)
+2019-06-11 19:25:08.825  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Oldest flaked stone tools point to the repeated invention of stone tools, uri=https://www.sciencedaily.com/releases/2019/06/190603151658.htm, publishedDate=Tue Jun 04 00:16:58 YEKT 2019)
+2019-06-11 19:25:08.826  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Exomoons may be home to extra-terrestrial life, uri=https://www.sciencedaily.com/releases/2019/06/190604131135.htm, publishedDate=Tue Jun 04 22:11:35 YEKT 2019)
+2019-06-11 19:25:08.828  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Carbon dioxide levels in atmosphere hit record high in May, uri=https://www.sciencedaily.com/releases/2019/06/190604140109.htm, publishedDate=Tue Jun 04 23:01:09 YEKT 2019)
+2019-06-11 19:25:08.829  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Solving the sun's super-heating mystery with Parker Solar Probe, uri=https://www.sciencedaily.com/releases/2019/06/190604162532.htm, publishedDate=Wed Jun 05 01:25:32 YEKT 2019)
+2019-06-11 19:25:08.830  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Ear-generated Doppler shifts in bat biosonar, uri=https://www.sciencedaily.com/releases/2019/06/190604172657.htm, publishedDate=Wed Jun 05 02:26:57 YEKT 2019)
+2019-06-11 19:25:08.832  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Pathogens may have facilitated the evolution of warm-blooded animals, uri=https://www.sciencedaily.com/releases/2019/06/190604172659.htm, publishedDate=Wed Jun 05 02:26:59 YEKT 2019)
+2019-06-11 19:25:08.833  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Honey bee colonies down by 16 percent, uri=https://www.sciencedaily.com/releases/2019/06/190605100318.htm, publishedDate=Wed Jun 05 19:03:18 YEKT 2019)
+2019-06-11 19:25:08.835  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=First-ever spider glue genes sequenced, paving way to next biomaterials breakthrough, uri=https://www.sciencedaily.com/releases/2019/06/190605100358.htm, publishedDate=Wed Jun 05 19:03:58 YEKT 2019)
+2019-06-11 19:25:08.837  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Details of first historically recorded plague pandemic revealed by ancient genomes, uri=https://www.sciencedaily.com/releases/2019/06/190605114620.htm, publishedDate=Wed Jun 05 20:46:20 YEKT 2019)
+2019-06-11 19:25:08.838 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: zwlzifihkdwzqmiuxgpl
+2019-06-11 19:25:09.093 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: rvtcwabbcfpjctyyienq
+2019-06-11 19:25:09.093 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: wsacgcoutmotojdotskc
+2019-06-11 19:25:09.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: egxyqfsayivjpxmkuxbh
+2019-06-11 19:25:09.226 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: xbbdhnpvfertsjmzfqid
+2019-06-11 19:25:09.325 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: dfjmyedqmyifhfcizzkt
+2019-06-11 19:25:09.427 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: vslxwpylofbdynmqtctz
+2019-06-11 19:25:09.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: diuzbzluiohzlsbllpzq
+2019-06-11 19:25:09.627 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: ruhwtkajhznelxjhczty
+2019-06-11 19:25:09.726 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: msjjyvfgksmqoumsjiis
+2019-06-11 19:25:09.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: qwlvnwtvqaasuqkepdmc
+2019-06-11 19:25:09.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: xbydpneetulfzxwhmrug
+2019-06-11 19:25:10.026 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: zeowlhoexlzdgykkumkk
+2019-06-11 19:25:10.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: cwnpymttfdrnsjmnaesz
+2019-06-11 19:25:10.226 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: tehhmkgwfdkhxnthhusj
+2019-06-11 19:25:10.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: pkhtllpacqbhkwyprdik
+2019-06-11 19:25:10.426 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: mvmjlhiukgtzanreigew
+2019-06-11 19:25:10.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: ryttxdzpeikhrjrosndo
+2019-06-11 19:25:10.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: kdsljmcncnuctadmsarp
+2019-06-11 19:25:10.726 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: kaatlwmmhejozrqalsfa
+2019-06-11 19:25:10.827 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: tzfwhptcdtggnmhebjqy
+2019-06-11 19:25:10.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: zjedqvoxrborphsimnon
+2019-06-11 19:25:11.026 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: fbhwrbjcuksyfaoqnppp
+2019-06-11 19:25:11.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: ldnczvvmokmvzjmqgvdw
+2019-06-11 19:25:11.226 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: syxkiomkvermagbfblqg
+2019-06-11 19:25:11.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: jfmxnxlkegacozmwcalr
+2019-06-11 19:25:11.426 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: qygnqdgmjfzvphhyebbx
+2019-06-11 19:25:11.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: btarpzqfzaskrbidhvuw
+2019-06-11 19:25:11.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: wwkccuvstilhhvinuods
+2019-06-11 19:25:11.726 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: zimtdneggrlbymeuukpa
+2019-06-11 19:25:11.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: wjvxtyjnthyhcirjjrlv
+2019-06-11 19:25:11.927 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: bwbrbyszoshihykawhvv
+2019-06-11 19:25:12.026 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: swiezaolcsdetfazljew
+2019-06-11 19:25:12.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: hubqsfvzftefmcjjkcuy
+2019-06-11 19:25:12.225 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: eyszrsnuqqxdqyjzllsn
+2019-06-11 19:25:12.327 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: rdtnsjrjxzyewmawbeff
+2019-06-11 19:25:12.427 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: qgswxmjgxivtjksdkojv
+2019-06-11 19:25:12.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: rcdbkzhoiaipvhdolyea
+2019-06-11 19:25:12.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: gsqqyfnxswjawnzzygbl
+2019-06-11 19:25:12.725 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: oupqearebdgdpauqlhkf
+2019-06-11 19:25:12.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: pmhqfapbhgraeptxgijx
+2019-06-11 19:25:12.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: atzagmjcejajnoogwuod
+2019-06-11 19:25:13.026 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: hywptoxlhkvftcawmwta
+2019-06-11 19:25:13.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: umneqkjjidzxfyecekdk
+2019-06-11 19:25:13.226 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: fcqvozyrnfbieuvleucp
+2019-06-11 19:25:13.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: vabcqbiillimyrkekdqq
+2019-06-11 19:25:13.426 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: whnqklyaunmxtbctjhkz
+2019-06-11 19:25:13.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: nccyjlvxiqclkvvinkqm
+2019-06-11 19:25:13.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: lkikgyhgdwdgcatazgsj
+2019-06-11 19:25:13.726 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: edsfsspegobuuxnmwvfr
+2019-06-11 19:25:13.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: ftxczgfaxetzmiflcrug
+2019-06-11 19:25:13.927 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: khgqkswvtnjxnzdbukba
+2019-06-11 19:25:14.026 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: nznojtpeqamltqcukkwf
+2019-06-11 19:25:14.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: xesbbjwhwbfhvbfirulz
+2019-06-11 19:25:14.226 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: ypzpjjfehxsnupgyhgjd
+2019-06-11 19:25:14.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: thxazpczcqucrsnrpqpo
+2019-06-11 19:25:14.426 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: khxokofhjlzlgicxmefg
+2019-06-11 19:25:14.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: ofjpzayxgdqluuafdwlr
+2019-06-11 19:25:14.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: gfyymnyikljsoobpvvsw
+2019-06-11 19:25:14.726 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: jytsleyxtxnjkvikbrus
+2019-06-11 19:25:14.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: ikrszcfkgzqvsuwapowf
+2019-06-11 19:25:14.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: buijukilikxcsbpyzotu
+2019-06-11 19:25:15.026 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: mkwcofhisypzhdisorip
+2019-06-11 19:25:15.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: hgoaiggswhhvyphiocye
+2019-06-11 19:25:15.226 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: qjbehnpzrdxmkirkryuy
+2019-06-11 19:25:15.327 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: vvdbmejgtciozyeucdev
+2019-06-11 19:25:15.426 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: uxaiyprjwrnjkxeukuzr
+2019-06-11 19:25:15.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: bcmnqzzzwuoywxmbexiz
+2019-06-11 19:25:15.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: ltznlvmhduhmggajsbun
+2019-06-11 19:25:15.726 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: myiefktnxnviujmqwkvc
+2019-06-11 19:25:15.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: kfjedlofuyclkplyxwey
+2019-06-11 19:25:15.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: wmfeocdjeqyhizzihcqt
+2019-06-11 19:25:16.026 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: gonrmxbdyofijgdtkdew
+2019-06-11 19:25:16.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: ujqnyuuskoznhslpktnr
+2019-06-11 19:25:16.227 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: kmujqwbfkmutjfnsgzfv
+2019-06-11 19:25:16.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: gxxyowdywfzrselvifaf
+2019-06-11 19:25:16.426 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: idvbamumbzqjwibwljew
+2019-06-11 19:25:16.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: efqfrowrgitihefbvikd
+2019-06-11 19:25:16.628 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: vysioimduldtuhunebjn
+2019-06-11 19:25:16.726 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: jznidwngskneqjyjmyav
+2019-06-11 19:25:16.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: oqlfrmujtwzizdlyyozp
+2019-06-11 19:25:16.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: nciagfvkqwdssddfoizn
+2019-06-11 19:25:17.026 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: zderxehvudohcpuyxjuc
+2019-06-11 19:25:17.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: wiwnjkebifqlxjlierdt
+2019-06-11 19:25:17.227 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: pzchwgqwjdpnphbgudmo
+2019-06-11 19:25:17.325 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: bnyvzuusbkyilcovfdom
+2019-06-11 19:25:17.426 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: kgkdwdqhyrwojiavgnuo
+2019-06-11 19:25:17.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: miousutrmnhnutfqlnjh
+2019-06-11 19:25:17.627 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: fwfyykzlzvqmouzntftr
+2019-06-11 19:25:17.726 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: cmvruarenfxuovvwvtjt
+2019-06-11 19:25:17.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: mubrxdoiobyouqtmzimb
+2019-06-11 19:25:17.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: nnniorqhfbddtrbunffa
+2019-06-11 19:25:18.026 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: suogmmmltwnitwunouyr
+2019-06-11 19:25:18.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: edliirlvhdvunxepoxpx
+2019-06-11 19:25:18.226 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: cuuploppwuvcbxouaneq
+2019-06-11 19:25:18.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: abrpjatijzsqpdtohecd
+2019-06-11 19:25:18.427 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: bqndfpnhzjpkrpckvxjn
+2019-06-11 19:25:18.527 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: qxtxzsevxqulkkowanye
+2019-06-11 19:25:18.625 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: pskpgubnnkiyjokthamt
+2019-06-11 19:25:18.726 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: ocbyhjpcqocuncqszxpi
+2019-06-11 19:25:18.822  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Glacial sediments greased the gears of plate tectonics, uri=https://www.sciencedaily.com/releases/2019/06/190605133511.htm, publishedDate=Wed Jun 05 22:35:11 YEKT 2019)
+2019-06-11 19:25:18.824  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Ancient DNA sheds light on Arctic hunter-gatherer migration to North America around 5,000 years ago, uri=https://www.sciencedaily.com/releases/2019/06/190605133522.htm, publishedDate=Wed Jun 05 22:35:22 YEKT 2019)
+2019-06-11 19:25:18.825  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=DNA from 31,000-year-old milk teeth leads to discovery of new group of ancient Siberians, uri=https://www.sciencedaily.com/releases/2019/06/190605133524.htm, publishedDate=Wed Jun 05 22:35:24 YEKT 2019)
+2019-06-11 19:25:18.826  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Cool, nebulous ring around Milky Way's supermassive black hole, uri=https://www.sciencedaily.com/releases/2019/06/190605133533.htm, publishedDate=Wed Jun 05 22:35:33 YEKT 2019)
+2019-06-11 19:25:18.828  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Hoard of the rings: Unusual rings are a novel type of Bronze Age cereal-based product, uri=https://www.sciencedaily.com/releases/2019/06/190605142602.htm, publishedDate=Wed Jun 05 23:26:02 YEKT 2019)
+2019-06-11 19:25:18.829  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Is there a limit to human endurance? Science says yes, uri=https://www.sciencedaily.com/releases/2019/06/190605142613.htm, publishedDate=Wed Jun 05 23:26:13 YEKT 2019)
+2019-06-11 19:25:18.830  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Surprising enzymes found in giant ocean viruses, uri=https://www.sciencedaily.com/releases/2019/06/190605154233.htm, publishedDate=Thu Jun 06 00:42:33 YEKT 2019)
+2019-06-11 19:25:18.831  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Bees can link symbols to numbers, study finds, uri=https://www.sciencedaily.com/releases/2019/06/190605171400.htm, publishedDate=Thu Jun 06 02:14:00 YEKT 2019)
+2019-06-11 19:25:18.832  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=New findings on Earth's magnetic field, uri=https://www.sciencedaily.com/releases/2019/06/190606101831.htm, publishedDate=Thu Jun 06 19:18:31 YEKT 2019)
+2019-06-11 19:25:18.833  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Translation of genes more complex than expected, uri=https://www.sciencedaily.com/releases/2019/06/190606133759.htm, publishedDate=Thu Jun 06 22:37:59 YEKT 2019)
+2019-06-11 19:25:18.834 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: sxqpigmptddeqccyfkoj
+2019-06-11 19:25:19.327 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: espvixsxlvkpvaicanit
+2019-06-11 19:25:19.327 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: cicsrnglwsivicohmekh
+2019-06-11 19:25:19.327 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: isbrfjxobhgcvskbetlk
+2019-06-11 19:25:19.328 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: ougvuudcvkhhvenszcek
+2019-06-11 19:25:19.328 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: eephodegdavrhncgkaos
+2019-06-11 19:25:19.426 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: yqvuezrjuwtivrwingcu
+2019-06-11 19:25:19.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: kdgviijnmajauejehhie
+2019-06-11 19:25:19.625 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: qzdhrioagbiyuuoijjyz
+2019-06-11 19:25:19.727 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: eztazxbsluuzuspmehtm
+2019-06-11 19:25:19.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: bbezigfnfhkocnhjuokk
+2019-06-11 19:25:19.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: pjpsfolhmnfjvyknzfxi
+2019-06-11 19:25:20.026 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: fjcrhsgtsxctfanjptpv
+2019-06-11 19:25:20.127 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: gzctpxmngbxxtkdkulim
+2019-06-11 19:25:20.226 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: ejppvcmmwjmqvhysljvo
+2019-06-11 19:25:20.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: gaqiubswfdafyimeeivk
+2019-06-11 19:25:20.426 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: grsjpfjoshlfjfwfhwzg
+2019-06-11 19:25:20.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: opsrdlshlthsehweexms
+2019-06-11 19:25:20.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: oitvijtfqgrovxlvqgln
+2019-06-11 19:25:20.726 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: vgwlylntsvpvzqqmgsoj
+2019-06-11 19:25:20.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: dcqqoyuvkqbwzfreppzr
+2019-06-11 19:25:20.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: zievtmztlhazxdwbohqe
+2019-06-11 19:25:21.026 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: yocetpznlzubaawcjjcl
+2019-06-11 19:25:21.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: pcrpeeuszowikipwaxhv
+2019-06-11 19:25:21.226 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: uhvgxgwpzkktetjqawse
+2019-06-11 19:25:21.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: tysfrfbdulwjrigsfxfk
+2019-06-11 19:25:21.427 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: adrpjxallhieqiubsrxn
+2019-06-11 19:25:21.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: hhdxbmugptkixbfhcprp
+2019-06-11 19:25:21.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: dsfbgbtwuugdrautujdf
+2019-06-11 19:25:21.726 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: pjmgknvktmspvcwtogdd
+2019-06-11 19:25:21.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: kjpzvpjgkgeoklhcoetd
+2019-06-11 19:25:21.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: emkidqayxajpmtvjetcq
+2019-06-11 19:25:22.026 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: htomtjfmdstqgucnoyxv
+2019-06-11 19:25:22.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: hcgzbtazkntjsrohztki
+2019-06-11 19:25:22.226 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: osxsqxfdmnwvqczabeol
+2019-06-11 19:25:22.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: wpncpcigaedzdmnlszux
+2019-06-11 19:25:22.426 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: fxtludvynrdrayzgoraa
+2019-06-11 19:25:22.527 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: tdilrvwzwrjltxnexojm
+2019-06-11 19:25:22.627 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: snmymgzasvcxnsrozkzj
+2019-06-11 19:25:22.726 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: hfurxcpffxentbeiplal
+2019-06-11 19:25:22.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: eikwcxgybatvupuueewv
+2019-06-11 19:25:22.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: lvjdxuvvuwkurooacdhl
+2019-06-11 19:25:23.026 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: hzzbxfdjefuditnttsfq
+2019-06-11 19:25:23.128 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: npgwumyjuzusfisbmywb
+2019-06-11 19:25:23.226 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: sbfrtvqlmkwiwcafefph
+2019-06-11 19:25:23.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: xotocyhtvpddermikxdn
+2019-06-11 19:25:23.426 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: fymrilvmvtrkyhunvycg
+2019-06-11 19:25:23.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: skfwfpxjgjnnbkoerimm
+2019-06-11 19:25:23.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: tkotwiqerufoqfqqzfsj
+2019-06-11 19:25:23.727 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: qghapbfulyuocqxokhzq
+2019-06-11 19:25:23.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: dtlnaksjspumtkzefaci
+2019-06-11 19:25:23.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: qojzinufmnosgjdrcgfa
+2019-06-11 19:25:24.026 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: zvvxwouktjiszqosdrwo
+2019-06-11 19:25:24.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: aiuptmgrjrvxovgcaagz
+2019-06-11 19:25:24.227 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: fckpdignvzkhbwcrtaqq
+2019-06-11 19:25:24.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: glsrjoktbkeonhxlzjva
+2019-06-11 19:25:24.426 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: npkaercbvmsphanovyxe
+2019-06-11 19:25:24.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: bhtqnxemlhcbwsqmdpew
+2019-06-11 19:25:24.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: sshjfelbemgtmmphdqlt
+2019-06-11 19:25:24.727 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: mrutfjkrwkinlziwqzcq
+2019-06-11 19:25:24.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: kyajiutqdneqxbuinzlv
+2019-06-11 19:25:24.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: odiwovldiughafxxmtau
+2019-06-11 19:25:25.027 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: efpafueslwrunstjmsiy
+2019-06-11 19:25:25.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: rlguvjobrpsfmesqhrwu
+2019-06-11 19:25:25.227 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: iamhkvtrcaawcebkyfhe
+2019-06-11 19:25:25.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: cdymznfongwwmjlgjpnu
+2019-06-11 19:25:25.426 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: lzhcfswliaxartfjpafd
+2019-06-11 19:25:25.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: bufwcvzkxhrwemqeoxct
+2019-06-11 19:25:25.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: wjoqhyijhmxchfbzulzw
+2019-06-11 19:25:25.727 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: ukcyzlkjjzxmbsmliirq
+2019-06-11 19:25:25.827 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: gdcmejieahxhnrkaitwu
+2019-06-11 19:25:25.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: uygkxygnswckrkiyaqis
+2019-06-11 19:25:26.026 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: hckwsivpwyyslbujbrkx
+2019-06-11 19:25:26.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: envrydxysmpozewsqxxa
+2019-06-11 19:25:26.226 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: qgyswppyfyeiexihwytg
+2019-06-11 19:25:26.327 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: jykdxuwagmluunvagnxo
+2019-06-11 19:25:26.426 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: yzchbxkynxvxxkhkxhet
+2019-06-11 19:25:26.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: hmbndiryuthldjqqrgtu
+2019-06-11 19:25:26.625 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: pkereykfdbgyekstmcpz
+2019-06-11 19:25:26.727 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: veoioepblrvuslmtkbon
+2019-06-11 19:25:26.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: ycexocclcxutibhhjvgp
+2019-06-11 19:25:26.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: emzefptkohohgwhbebqg
+2019-06-11 19:25:27.026 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: xxtrurxwysvzuqhqvrsd
+2019-06-11 19:25:27.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: ioeolmsdpnfrkwflgoyi
+2019-06-11 19:25:27.226 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: ykvylstiaxsnjqsktdgr
+2019-06-11 19:25:27.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: llzbeewqggruhkznojdt
+2019-06-11 19:25:27.426 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: pqqgibzvgjuouvfkzkzt
+2019-06-11 19:25:27.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: kqnxaolkkoqumsvyvgtu
+2019-06-11 19:25:27.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: imaqacurrqhrgudcoqpx
+2019-06-11 19:25:27.726 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: bebhvcrlgphecjsmkltg
+2019-06-11 19:25:27.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: lysaaelrykudbrugrrsr
+2019-06-11 19:25:27.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: oacdckswpiiwbpipbkat
+2019-06-11 19:25:28.026 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: wztqqijbjyvtfswjjqug
+2019-06-11 19:25:28.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: jeqccfdczzfidprcdvxj
+2019-06-11 19:25:28.226 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: mecmbkkslivtlobkwadb
+2019-06-11 19:25:28.327 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: jyyodhslvugbabiiqgdx
+2019-06-11 19:25:28.425 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: mkcfrqlxvmhqovrdebvt
+2019-06-11 19:25:28.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: vumnjfarsofncarlzwiw
+2019-06-11 19:25:28.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: oadtrewgjihvpdiejysz
+2019-06-11 19:25:28.726 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: yakfxvksnvpeqldqlbda
+2019-06-11 19:25:28.824  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Alzheimer's disease protein links plaques to cell death in mice, uri=https://www.sciencedaily.com/releases/2019/06/190606133824.htm, publishedDate=Thu Jun 06 22:38:24 YEKT 2019)
+2019-06-11 19:25:28.825  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=New study identifies molecular aging 'midlife crisis', uri=https://www.sciencedaily.com/releases/2019/06/190606150231.htm, publishedDate=Fri Jun 07 00:02:31 YEKT 2019)
+2019-06-11 19:25:28.827  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Danger avoidance can be genetically encoded for four generations, say biologists, uri=https://www.sciencedaily.com/releases/2019/06/190606150247.htm, publishedDate=Fri Jun 07 00:02:47 YEKT 2019)
+2019-06-11 19:25:28.828  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Ultimate destiny: How undifferentiated cells commit to their biological fate, uri=https://www.sciencedaily.com/releases/2019/06/190606150300.htm, publishedDate=Fri Jun 07 00:03:00 YEKT 2019)
+2019-06-11 19:25:28.831  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=How old are your organs? To scientists' surprise, organs are a mix of young and old cells, uri=https://www.sciencedaily.com/releases/2019/06/190606150315.htm, publishedDate=Fri Jun 07 00:03:15 YEKT 2019)
+2019-06-11 19:25:28.833  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Study provides new insight into origin of Canadian Rockies, uri=https://www.sciencedaily.com/releases/2019/06/190606150328.htm, publishedDate=Fri Jun 07 00:03:28 YEKT 2019)
+2019-06-11 19:25:28.834  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Could climate change make Siberia more habitable?, uri=https://www.sciencedaily.com/releases/2019/06/190606223509.htm, publishedDate=Fri Jun 07 07:35:09 YEKT 2019)
+2019-06-11 19:25:28.835  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Site of biggest ever meteorite collision in the UK discovered, uri=https://www.sciencedaily.com/releases/2019/06/190610085903.htm, publishedDate=Mon Jun 10 17:59:03 YEKT 2019)
+2019-06-11 19:25:28.837  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=Mass anomaly detected under the moon's largest crater, uri=https://www.sciencedaily.com/releases/2019/06/190610100620.htm, publishedDate=Mon Jun 10 19:06:20 YEKT 2019)
+2019-06-11 19:25:28.838  INFO 5108 --- [   scheduling-1] o.s.integration.handler.LoggingHandler   : Persisting entry: FeedEntry(title=In romantic relationships, people do indeed have a 'type', uri=https://www.sciencedaily.com/releases/2019/06/190610160248.htm, publishedDate=Tue Jun 11 01:02:48 YEKT 2019)
+2019-06-11 19:25:28.839 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: qojegvhegxkawmfbtbik
+2019-06-11 19:25:29.297 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: utldulymxjstlzgwxato
+2019-06-11 19:25:29.297 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: mzoofswourcbsgjtqsdl
+2019-06-11 19:25:29.297 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: hlsbmlyukuecaporumow
+2019-06-11 19:25:29.297 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: tmfmriyqewmgfhxnqnhp
+2019-06-11 19:25:29.327 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: nmllwzwuqvfhyruofgze
+2019-06-11 19:25:29.426 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: zbgbugyenitrrqrndswh
+2019-06-11 19:25:29.525 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: tqzridleiuqtkdbuxyce
+2019-06-11 19:25:29.627 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: xrcbvkzzejdqtgobeikc
+2019-06-11 19:25:29.727 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: uvtuczepeaoylepldeyp
+2019-06-11 19:25:29.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: hnmiqkoggkujbxwmdekg
+2019-06-11 19:25:29.927 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: xxgqcmahkcxlbdjswrwd
+2019-06-11 19:25:30.026 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: dqbpglgenojonpvsjqvu
+2019-06-11 19:25:30.127 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: rqxawhokcrqfenmkvkms
+2019-06-11 19:25:30.226 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: xvrebyabujwowihscumn
+2019-06-11 19:25:30.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: aobrmyvndlctqlqnemra
+2019-06-11 19:25:30.427 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: iizybnskddbogmyqjfyh
+2019-06-11 19:25:30.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: iucosmyenywwjogdrudn
+2019-06-11 19:25:30.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: nynauagomspamzdvmjit
+2019-06-11 19:25:30.726 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: lyecgmhywsmfdrcgpgkg
+2019-06-11 19:25:30.827 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: qrztltinldwsykgaltvg
+2019-06-11 19:25:30.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: flqeasbelssxyyofwnfi
+2019-06-11 19:25:31.026 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: jrxvtglioozbbixbxoou
+2019-06-11 19:25:31.125 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: pkweoshcjywnhxojvrzi
+2019-06-11 19:25:31.227 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: cgdixzxqyjpcbqxxjeqk
+2019-06-11 19:25:31.327 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: hwswigljlmowtkschvyk
+2019-06-11 19:25:31.427 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: vxcdffxzvwscdetwgkrz
+2019-06-11 19:25:31.525 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: srdjrsvrvqvoqsoizsot
+2019-06-11 19:25:31.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: tnhtiibgcpfwwbkmhzig
+2019-06-11 19:25:31.725 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: blkwmkbejrzyjorkfwkm
+2019-06-11 19:25:31.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: mwdepsgbqlhggbohylgt
+2019-06-11 19:25:31.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: ivpykepwpfmmcdkwdyio
+2019-06-11 19:25:32.026 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: togkgrcmvggduqhmrqxw
+2019-06-11 19:25:32.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: lzvmlbphqvdegoovupui
+2019-06-11 19:25:32.226 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: zppkmjnqquiernevwlld
+2019-06-11 19:25:32.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: ceajkhwmmtaspqwjwwyx
+2019-06-11 19:25:32.427 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: tmrvctpydcrkzmyzlhhc
+2019-06-11 19:25:32.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: dngralunqtdwkzrfavsx
+2019-06-11 19:25:32.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: smxflgrolhvvopehfywo
+2019-06-11 19:25:32.726 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: olxrscmqwkgblznjhjqf
+2019-06-11 19:25:32.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: wnrfxgwjvhnsjwycnsik
+2019-06-11 19:25:32.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: bcmbkjptlzipgxbbyeqv
+2019-06-11 19:25:33.026 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: ljzmgkvfkovwuoemoihr
+2019-06-11 19:25:33.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: bdrpwagcucakeqcegeox
+2019-06-11 19:25:33.227 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: sxcehbrfbyjcwbjaceos
+2019-06-11 19:25:33.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: ghrngeyoswsijmmymkzh
+2019-06-11 19:25:33.425 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: gldnistliurvwbhyscyl
+2019-06-11 19:25:33.527 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: ijkxtwzsbrbhdrbelrkh
+2019-06-11 19:25:33.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: mcdjcktajiufuunlxoer
+2019-06-11 19:25:33.726 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: slkkubcqkkivmnvifadq
+2019-06-11 19:25:33.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: zwvwivfmgsrffdnhfdzi
+2019-06-11 19:25:33.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: bvfatpofyibglegvomph
+2019-06-11 19:25:34.026 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: cqqhjabwdinttmzsevwa
+2019-06-11 19:25:34.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: xyxecympmcgrgmobfaaw
+2019-06-11 19:25:34.226 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: qpovvllivlkeqgplisyz
+2019-06-11 19:25:34.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: ibvwkkoadvicfitwdloo
+2019-06-11 19:25:34.426 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: lnxvwlvpejaelwkynujj
+2019-06-11 19:25:34.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: setlnuysotljjavwfqjd
+2019-06-11 19:25:34.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: dhmbjzbjmwezfhtegmou
+2019-06-11 19:25:34.727 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: jsaxxlxykobzqtymibhk
+2019-06-11 19:25:34.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: olwjvqdjtqeraccuftvs
+2019-06-11 19:25:34.926 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: zvviygltqukpmvoqdztd
+2019-06-11 19:25:35.026 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: gjvsrzicjwcumxpdnaua
+2019-06-11 19:25:35.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: rpjdzkyefgkxnpcmtgnj
+2019-06-11 19:25:35.227 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: fbhxvfigbsfxswveweqw
+2019-06-11 19:25:35.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: grrtmdcsvuinopfkdjnb
+2019-06-11 19:25:35.426 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: ttyjwigvyyuskheilizq
+2019-06-11 19:25:35.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: uhftxgmhbuaqafeepzmb
+2019-06-11 19:25:35.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: ztggwgsixkqotcazcvan
+2019-06-11 19:25:35.726 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: ragpgjbynbvuisrnhilf
+2019-06-11 19:25:35.826 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: yxiqzrtpcdrwdfgwbhbn
+2019-06-11 19:25:35.927 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: nilmlwieiykbdhrhvidm
+2019-06-11 19:25:36.027 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: sxdwmpznahvkpwmenigo
+2019-06-11 19:25:36.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: ejmeinuhmitmgtymxkac
+2019-06-11 19:25:36.226 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: iqvyhxsjjitgjsduoaxn
+2019-06-11 19:25:36.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: dwznaupgavsoxilrhlhy
+2019-06-11 19:25:36.426 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: xjdnivvyfscqojxpfdvb
+2019-06-11 19:25:36.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: uqyvvrwszbzhkogsfkzm
+2019-06-11 19:25:36.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: skogxzooyowgtkmlkbsc
+2019-06-11 19:25:36.726 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: jucjqhevqleergpqwvcg
+2019-06-11 19:25:36.827 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: nncukvjjntfvvnootlvt
+2019-06-11 19:25:36.927 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.RuntimeException: pszvbmkiezxvsmynpyyz
+2019-06-11 19:25:37.027 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: ztpbeoeprthjkvmofdis
+2019-06-11 19:25:37.126 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalArgumentException: mfwurrmzdkxbnkcwdvyd
+2019-06-11 19:25:37.225 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: rikeistbsxjnsqarbvsq
+2019-06-11 19:25:37.326 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: fbnxvoemqnxyfxnjgvkk
+2019-06-11 19:25:37.427 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: ywbsszyztynscroxzodh
+2019-06-11 19:25:37.526 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: esyhtwvagrxfsfbpshqj
+2019-06-11 19:25:37.626 ERROR 5108 --- [   scheduling-1] c.t.f.FeedAggregatorApplication          : java.lang.IllegalStateException: wpjcyxhfufkmujobrjmi
