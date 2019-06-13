@@ -7,10 +7,12 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Comparator;
+import java.util.LinkedList;
 import java.util.Objects;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 @RequiredArgsConstructor
@@ -30,15 +32,19 @@ public class LogFilesDirProcessor<T> {
     }
 
     private Stream<String> configurePipeline(Path logFilesDirPath, Predicate<T> filter, Comparator<T> comparator) throws IOException {
-        return Files.list(logFilesDirPath)
-                .filter(Files::isRegularFile)
-                .flatMap(LogFilesDirProcessor::getFileLinesStreamUnchecked)
-                .map(fromLineMapper)
-                .filter(Objects::nonNull)
-                .filter(filter)
-                .sorted(comparator)
-                .map(toLineMapper)
-                .parallel();
+        try (Stream<Path> filesStream = Files.list(logFilesDirPath)) {
+            return filesStream
+                    .filter(Files::isRegularFile)
+                    .collect(Collectors.toCollection(LinkedList::new))
+                    .stream()
+                    .flatMap(LogFilesDirProcessor::getFileLinesStreamUnchecked)
+                    .map(fromLineMapper)
+                    .filter(Objects::nonNull)
+                    .filter(filter)
+                    .sorted(comparator)
+                    .map(toLineMapper)
+                    .parallel();
+        }
     }
 
     private static Stream<String> getFileLinesStreamUnchecked(Path path) {
