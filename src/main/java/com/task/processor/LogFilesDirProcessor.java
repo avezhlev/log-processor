@@ -1,14 +1,13 @@
 package com.task.processor;
 
+import com.task.util.StreamUtils;
 import lombok.RequiredArgsConstructor;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Comparator;
-import java.util.LinkedList;
-import java.util.Objects;
+import java.util.*;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.function.Function;
 import java.util.function.Predicate;
@@ -35,9 +34,10 @@ public class LogFilesDirProcessor<T> {
         try (Stream<Path> filesStream = Files.list(logFilesDirPath)) {
             return filesStream
                     .filter(Files::isRegularFile)
-                    .collect(Collectors.toCollection(LinkedList::new))
-                    .stream()
-                    .flatMap(LogFilesDirProcessor::getFileLinesStreamUnchecked)
+                    .map(LogFilesDirProcessor::getFileLinesStreamUnchecked)
+                    .collect(Collectors.collectingAndThen(
+                            Collectors.toList(),
+                            StreamUtils::balancingConcat))
                     .map(fromLineMapper)
                     .filter(Objects::nonNull)
                     .filter(filter)
