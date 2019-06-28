@@ -1,7 +1,8 @@
 package com.task;
 
-import com.task.processor.LogEntry;
+import com.task.domain.LogEntry;
 import com.task.processor.LogFilesDirProcessor;
+import com.task.util.FilesLinesStreamProviderImpl;
 
 import java.util.Comparator;
 
@@ -13,7 +14,10 @@ public class Runner {
             return;
         }
         LogFilesDirProcessor<LogEntry> processor =
-                new LogFilesDirProcessor<>(LogEntry::parse, LogEntry::toString);
+                new LogFilesDirProcessor<>(
+                        LogEntry::parse, LogEntry::toString,
+                        new FilesLinesStreamProviderImpl((path, e) ->
+                                System.out.println("Skipping failed to open file '" + path + "': " + e)));
         System.out.println("Processing...");
         try {
             long count = processor.process(

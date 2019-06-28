@@ -1,4 +1,4 @@
-package com.task.processor;
+package com.task.domain;
 
 import lombok.AccessLevel;
 import lombok.Getter;
