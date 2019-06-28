@@ -17,8 +17,13 @@ import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+/**
+ * Filters and sorts entries from the line-based files (such as log files).
+ *
+ * @param <T> A holder class for a parsed line entry.
+ */
 @RequiredArgsConstructor
-public class LogFilesDirProcessor<T> {
+public class LineBasedFilesProcessor<T> {
 
     @NonNull
     private final Function<String, ? extends T> fromLineMapper;

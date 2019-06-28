@@ -1,7 +1,7 @@
 package com.task;
 
 import com.task.domain.LogEntry;
-import com.task.processor.LogFilesDirProcessor;
+import com.task.processor.LineBasedFilesProcessor;
 import com.task.util.FilesLinesStreamProviderImpl;
 
 import java.util.Comparator;
@@ -13,8 +13,8 @@ public class Runner {
             printUsage();
             return;
         }
-        LogFilesDirProcessor<LogEntry> processor =
-                new LogFilesDirProcessor<>(
+        LineBasedFilesProcessor<LogEntry> processor =
+                new LineBasedFilesProcessor<>(
                         LogEntry::parse, LogEntry::toString,
                         new FilesLinesStreamProviderImpl((path, e) ->
                                 System.out.println("Skipping failed to open file '" + path + "': " + e)));

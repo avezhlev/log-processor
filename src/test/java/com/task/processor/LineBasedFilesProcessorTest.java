@@ -11,7 +11,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Arrays;
 
-public class LogFilesDirProcessorTest {
+public class LineBasedFilesProcessorTest {
 
     private static final String TEST_DATA_DIR_PATH = "./data";
     private static final String TEST_RESULT_FILE_PATH = "./data/output/out.log";
@@ -21,11 +21,11 @@ public class LogFilesDirProcessorTest {
     private static final long TEST_DATA_TOTAL_ENTRIES = Arrays.stream(TEST_DATA_ENTRIES_PER_LOG_FILE).sum();
     private static final long TEST_DATA_TOTAL_INFO_ENTRIES = Arrays.stream(TEST_DATA_INFO_ENTRIES_PER_LOG_FILE).sum();
 
-    private LogFilesDirProcessor<LogEntry> objectUnderTest;
+    private LineBasedFilesProcessor<LogEntry> objectUnderTest;
 
     @Before
     public void setup() {
-        objectUnderTest = new LogFilesDirProcessor<>(LogEntry::parse, LogEntry::toString, new FilesLinesStreamProviderImpl());
+        objectUnderTest = new LineBasedFilesProcessor<>(LogEntry::parse, LogEntry::toString, new FilesLinesStreamProviderImpl());
     }
 
     @Test
